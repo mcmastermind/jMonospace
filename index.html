@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+   <head>
+      <title>jMonospace - jQuery Monospace Font Generator</title>
+      <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+      <script src="js/jMonospace.js"></script>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      
+      <script>
+         $(function(){
+            $('.jMonospace').jMonospace({ spacing: 1 });
+         });
+      </script>
+
+   </head>
+   <body>
+
+      <div class="container">
+
+         <div class="pull-left">
+            <h2>jMonospace</h2>
+            <h4>jQuery plugin to generate lines of monospaced text with any font</h4>
+        </div>
+        <div class="pull-right">
+            <br>
+            <br>
+            <form>
+            <button type="button" class="btn btn-xs btn-primary" onclick="window.open('https://github.com/mcmastermind/jMonospace/archive/master.zip','_blank')">
+                <span class="glyphicon glyphicon-save"></span>
+                <br>Download Files
+            </button>
+         </form>
+        </div>
+
+        <hr style="clear:both;">
+
+         <h4>Non-monospace</h4>
+         <p>
+            The quick brown fox jumped over the lazy dog.
+         </p>
+         <p>
+            Amazingly few discotheques provide jukeboxes.
+         </p>
+
+         <br>
+         <h4>jMonospace</h4>
+         <p class="jMonospace">
+            The quick brown fox jumped over the lazy dog.
+         </p>
+         <p class="jMonospace">
+            Amazingly few discotheques provide jukeboxes.
+         </p>
+
+      </div>
+
+   </body>
+</html>
